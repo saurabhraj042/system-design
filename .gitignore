@@ -1,0 +1,12 @@
+# Local reference files — never commit these
+NOTES_GUIDELINES.md
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
