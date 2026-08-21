@@ -47,6 +47,44 @@ Recurring architectural problems that interviewers probe deeply. Each pattern co
 
 ---
 
+## Low Level Design
+
+Object-oriented design, concurrency, and classic LLD interview problems.
+
+### Fundamentals
+
+| Topic | What You'll Learn |
+|-------|------------------|
+| [Delivery Framework](low-level-design/fundamentals/delivery-framework.md) | How to structure an LLD interview: requirements → class diagram → core logic → edge cases |
+| [Design Principles](low-level-design/fundamentals/design-principles.md) | SOLID, DRY, YAGNI, Law of Demeter — principles that guide class and interface design |
+| [OOP Concepts](low-level-design/fundamentals/oop-concepts.md) | Encapsulation, inheritance, polymorphism, abstraction — and when each one helps |
+| [Design Patterns](low-level-design/fundamentals/design-patterns.md) | Creational, structural, and behavioral patterns (Factory, Strategy, Observer, Singleton, etc.) |
+
+### Concurrency
+
+| Topic | What You'll Learn |
+|-------|------------------|
+| [Introduction](low-level-design/concurrency/introduction.md) | Threads, processes, the GIL, race conditions, and why concurrency is hard |
+| [Correctness](low-level-design/concurrency/correctness.md) | Locks, mutexes, atomic operations, and how to reason about thread safety |
+| [Coordination](low-level-design/concurrency/coordination.md) | Semaphores, condition variables, barriers, and producer-consumer patterns |
+| [Scarcity](low-level-design/concurrency/scarcity.md) | Thread pools, connection pools, rate limiting at the thread level |
+
+### Problem Breakdowns
+
+| Problem | Core Concepts Practiced |
+|---------|------------------------|
+| [Connect Four](low-level-design/problems/connect-four.md) | Grid state, win detection, turn management |
+| [Amazon Locker](low-level-design/problems/amazon-locker.md) | Package assignment, size matching, expiration |
+| [Elevator](low-level-design/problems/elevator.md) | State machines, scheduling algorithms, multiple elevators |
+| [Parking Lot](low-level-design/problems/parking-lot.md) | Polymorphism (vehicle types), space tracking, pricing strategies |
+| [File System](low-level-design/problems/file-system.md) | Composite pattern, recursive operations, permissions |
+| [Movie Ticket Booking](low-level-design/problems/movie-ticket-booking.md) | Seat reservation, concurrency, payment flow |
+| [Logging Service](low-level-design/problems/logging-service.md) | Singleton, log levels, async flushing, multiple sinks |
+| [Rate Limiter](low-level-design/problems/rate-limiter.md) | Token bucket, sliding window, per-user vs global limits |
+| [Inventory Management](low-level-design/problems/inventory-management.md) | Stock tracking, reservations, restocking triggers |
+
+---
+
 ## Technologies
 
 Deep dives on specific technologies. Use these when you need to justify a technology choice in an interview or understand how a tool works under the hood.
@@ -90,3 +128,8 @@ Deep dives on specific technologies. Use these when you need to justify a techno
 **Week 4 — Advanced Patterns + Technologies**
 - Multi-Step Processes → Dealing with Contention → Managing Long-Running Tasks → Handling Large Blobs
 - Read relevant technology deep dives as they come up in patterns
+
+**Week 5–6 — Low Level Design**
+- Delivery Framework → Design Principles → OOP Concepts → Design Patterns
+- Concurrency: Introduction → Correctness → Coordination → Scarcity
+- Problem Breakdowns: work through each problem in `low-level-design/problems/`
